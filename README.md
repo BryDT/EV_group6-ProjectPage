@@ -33,10 +33,7 @@ to pick a static object and place it into a moving target.
 
 ## Project Video
 
-<video width="900" controls>
-  <source src="assets/demo.mp4" type="video/mp4">
-</video>
-
+[▶ Watch Video](assets/demo.mp4)
 
 ---
 
