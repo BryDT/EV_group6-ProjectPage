@@ -226,9 +226,19 @@ $$
 
 ### Future Prediction
 
-$$
+<!-- $$
 \hat{\mathbf{p}}_{drop} = \begin{bmatrix} \hat{x}(t_0+t_m) \\ \hat{y}(t_0+t_m) \end{bmatrix}
-$$
+$$ -->
+
+```math
+\hat{\mathbf{p}}_{drop}=
+\left[
+\begin{array}{c}
+\hat{x}(t_0+t_m)\\
+\hat{y}(t_0+t_m)
+\end{array}
+\right]
+```
 
 $$
 \hat{\mathbf{x}}(t_0+t_m) = \mathbf{F}(t_m)\hat{\mathbf{x}}(t_0)
