@@ -194,7 +194,7 @@ Suitable for short prediction horizons.
 
 ### State Model
 
-$$
+<!-- $$
 \mathbf{x}_k =
 \begin{bmatrix}
 x_k & y_k & v_{x,k} & v_{y,k} & a_{x,k} & a_{y,k}
@@ -216,6 +216,22 @@ $$
 \hat{\mathbf{x}}(t_0+t_m)
 =
 \mathbf{F}(t_m)\hat{\mathbf{x}}(t_0)
+$$ -->
+
+### State Model
+
+$$
+\mathbf{x}_k = \begin{bmatrix} x_k & y_k & v_{x,k} & v_{y,k} & a_{x,k} & a_{y,k} \end{bmatrix}^{T}
+$$
+
+### Future Prediction
+
+$$
+\hat{\mathbf{p}}_{drop} = \begin{bmatrix} \hat{x}(t_0+t_m) \\ \hat{y}(t_0+t_m) \end{bmatrix}
+$$
+
+$$
+\hat{\mathbf{x}}(t_0+t_m) = \mathbf{F}(t_m)\hat{\mathbf{x}}(t_0)
 $$
 
 ---
@@ -228,7 +244,7 @@ Suitable for periodic target motions and longer prediction horizons.
   <img src="assets/oscillator_test.gif" width="900">
 </p>
 
-### Oscillator Model
+<!-- ### Oscillator Model
 
 $$
 s(t)=A\sin(\omega t+\phi)+c
@@ -246,6 +262,22 @@ $$
 \hat{\mathbf{p}}_{drop}
 =
 \mathbf{p}_c + s(t_0+t_m)\mathbf{u}
+$$ -->
+
+### Oscillator Model
+
+$$
+s(t)=A\sin(\omega t+\phi)+c
+$$
+
+### Future Prediction
+
+$$
+s(t_0+t_m)=A\sin(\omega(t_0+t_m)+\phi)+c
+$$
+
+$$
+\hat{\mathbf{p}}_{drop}=\mathbf{p}_c+s(t_0+t_m)\mathbf{u}
 $$
 
 ---
