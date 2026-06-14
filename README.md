@@ -33,13 +33,17 @@ to pick a static object and place it into a moving target.
 
 ## Project Video
 
-<!-- <video width="100%" controls>
-  <source src="[https://github.com/user-attachments/assets/6cf73f77-72a3-493c-8a14-e53f06ffb417](https://github.com/user-attachments/assets/6cf73f77-72a3-493c-8a14-e53f06ffb417)" type="video/mp4">
-  Your browser does not support the video tag.
-</video> -->
+<p align="center">
+  <a href="https://github.com/user-attachments/assets/6cf73f77-72a3-493c-8a14-e53f06ffb417">
+    <img src="assets/demo_run.gif" width="900" alt="Demo GIF">
+  </a>
+</p>
 
-<!-- https://github.com/user-attachments/assets/6cf73f77-72a3-493c-8a14-e53f06ffb417 -->
-![Demo](https://github.com/user-attachments/assets/6cf73f77-72a3-493c-8a14-e53f06ffb417)
+<p align="center">
+  <a href="https://github.com/user-attachments/assets/6cf73f77-72a3-493c-8a14-e53f06ffb417">
+    🎥 Watch Full Video
+  </a>
+</p>
 
 ---
 
