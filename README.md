@@ -153,7 +153,7 @@ to identify:
 * Place target
 
 <p align="center">
-  <img src="assets/object_detection.png" width="900">
+  <img src="assets/Object_Detection.png" width="900">
 </p>
 
 ---
@@ -189,24 +189,34 @@ The observed target motion is transferred into the Isaac Lab digital twin and us
 Suitable for short prediction horizons.
 
 <p align="center">
-  <img src="assets/kalman_prediction.png" width="900">
+  <img src="assets/kalman_test.gif" width="900">
 </p>
 
 ### State Model
 
-[
-\mathbf{x}*k =
-[x_k,y_k,v*{x,k},v_{y,k},a_{x,k},a_{y,k}]^T
-]
+$$
+\mathbf{x}_k =
+\begin{bmatrix}
+x_k & y_k & v_{x,k} & v_{y,k} & a_{x,k} & a_{y,k}
+\end{bmatrix}^{T}
+$$
 
 ### Future Prediction
 
-[
+$$
 \hat{\mathbf{p}}_{drop}
-=======================
+=
+\begin{bmatrix}
+\hat{x}(t_0+t_m) \\
+\hat{y}(t_0+t_m)
+\end{bmatrix}
+$$
 
+$$
+\hat{\mathbf{x}}(t_0+t_m)
+=
 \mathbf{F}(t_m)\hat{\mathbf{x}}(t_0)
-]
+$$
 
 ---
 
@@ -215,23 +225,28 @@ Suitable for short prediction horizons.
 Suitable for periodic target motions and longer prediction horizons.
 
 <p align="center">
-  <img src="assets/oscillator_prediction.png" width="900">
+  <img src="assets/oscillator_test.gif" width="900">
 </p>
 
 ### Oscillator Model
 
-[
+$$
 s(t)=A\sin(\omega t+\phi)+c
-]
+$$
 
 ### Future Prediction
 
-[
+$$
 s(t_0+t_m)
-==========
-
+=
 A\sin(\omega(t_0+t_m)+\phi)+c
-]
+$$
+
+$$
+\hat{\mathbf{p}}_{drop}
+=
+\mathbf{p}_c + s(t_0+t_m)\mathbf{u}
+$$
 
 ---
 
