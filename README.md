@@ -38,7 +38,7 @@ to pick a static object and place it into a moving target.
   Your browser does not support the video tag.
 </video> -->
 
-https://github.com/user-attachments/assets/6cf73f77-72a3-493c-8a14-e53f06ffb417
+<!-- https://github.com/user-attachments/assets/6cf73f77-72a3-493c-8a14-e53f06ffb417 -->
 ![Demo](https://github.com/user-attachments/assets/6cf73f77-72a3-493c-8a14-e53f06ffb417)
 
 ---
@@ -105,8 +105,12 @@ Dynamic Placement
 
 The robot performs a structured scan of the workspace using multiple viewpoints at different heights and pitch angles.
 
-<p align="center">
+<!-- <p align="center">
   <img src="assets/environment_scan.png" width="900">
+</p> -->
+
+<p align="center">
+  <img src="assets/environment_scan.gif" width="800">
 </p>
 
 ---
@@ -154,10 +158,14 @@ to identify:
 
 ## Grasp & Sentry
 
-The robot first grasps the cube and then moves into a sentry position where the moving target remains visible.
+The robot first grasps the cube and then moves into a sentry position where the moving target remains visible, below is the view of the moving object from the sentry position.
+
+<!-- <p align="center">
+  <img src="assets/grasp_sentry.png" width="900">
+</p> -->
 
 <p align="center">
-  <img src="assets/grasp_sentry.png" width="900">
+  <img src="assets/sentry_view.gif" width="800">
 </p>
 
 ---
