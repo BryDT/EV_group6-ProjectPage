@@ -174,6 +174,10 @@ The robot first grasps the cube and then moves into a sentry position where the 
 
 The observed target motion is transferred into the Isaac Lab digital twin and used to predict future target locations.
 
+<p align="center">
+  <img src="assets/isaac_sentry_view.gif" width="800">
+</p>
+
 ---
 
 ## Kalman-Based Motion Prediction
@@ -227,22 +231,11 @@ A\sin(\omega(t_0+t_m)+\phi)+c
 
 ---
 
-# Results
-
-## Dynamic Placement Demonstrations
+## Simulated Run
 
 <p align="center">
-  <img src="assets/results.gif" width="900">
+  <img src="assets/sim_pred_run.gif" width="800">
 </p>
-
----
-
-## Example Predictions
-
-| Method     | Predicted Position | Actual Position |
-| ---------- | ------------------ | --------------- |
-| Kalman     | TBD                | TBD             |
-| Oscillator | TBD                | TBD             |
 
 ---
 
