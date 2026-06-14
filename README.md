@@ -33,24 +33,13 @@ to pick a static object and place it into a moving target.
 
 ## Project Video
 
-<video width="100%" controls>
+<!-- <video width="100%" controls>
   <source src="[https://github.com/user-attachments/assets/6cf73f77-72a3-493c-8a14-e53f06ffb417](https://github.com/user-attachments/assets/6cf73f77-72a3-493c-8a14-e53f06ffb417)" type="video/mp4">
   Your browser does not support the video tag.
-</video>
+</video> -->
 
----
-
-## System Overview
-
-<p align="center">
-  <img src="assets/system_overview.png" width="1000">
-</p>
-
-The system consists of three major stages:
-
-1. Scene Understanding
-2. Object Identification
-3. Dynamic Manipulation
+https://github.com/user-attachments/assets/6cf73f77-72a3-493c-8a14-e53f06ffb417
+![Demo](https://github.com/user-attachments/assets/6cf73f77-72a3-493c-8a14-e53f06ffb417)
 
 ---
 
@@ -108,10 +97,6 @@ Dynamic Placement
 * No external tracking system
 * Dynamic placement target
 
-<p align="center">
-  <img src="assets/experiment_setup.png" width="800">
-</p>
-
 ---
 
 # Scene Understanding
@@ -131,7 +116,7 @@ The robot performs a structured scan of the workspace using multiple viewpoints 
 RGB and depth observations are fused into a dense point cloud using TSDF Fusion.
 
 <p align="center">
-  <img src="assets/tsdf_reconstruction.png" width="900">
+  <img src="assets/tsdf.png" width="900">
 </p>
 
 ---
@@ -141,7 +126,7 @@ RGB and depth observations are fused into a dense point cloud using TSDF Fusion.
 Segment Anything 3D separates semantic regions of the scene for downstream analysis.
 
 <p align="center">
-  <img src="assets/sam3d_segmentation.png" width="900">
+  <img src="assets/Segment_Anything_3D.png" width="900">
 </p>
 
 ---
